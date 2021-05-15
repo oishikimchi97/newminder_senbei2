@@ -97,7 +97,7 @@ def get_offset(template_imgs: np.array, base_img: np.array, target_img: np.array
     offset = [target_top_left[i] - base_top_left[i] for i in range(len(base_top_left))]
     return offset
 
-def substract(args):
+def subtract(args):
     template_paths = glob.glob(args.template_dir + '/*')
     template_imgs = []
     for path in template_paths:
@@ -183,4 +183,4 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-    substract(args)
+    subtract(args)

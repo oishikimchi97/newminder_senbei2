@@ -3,7 +3,7 @@ import glob
 from pathlib import Path
 from types import SimpleNamespace
 
-from substraction import substract
+from substraction import subtract
 from infer import infer
 
 
@@ -23,7 +23,7 @@ def main(args):
             target_img_path=input_img_path,
             sub_path=sub_img_path
         )
-        substract(substract_args)
+        subtract(substract_args)
     for sub_img_path in sub_img_paths:
         infer_args = SimpleNamespace(
             target_img_path=sub_img_path,
