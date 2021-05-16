@@ -8,13 +8,13 @@ $ python data.py --senbei_template senbei_data/template.bmp --senbei_target senb
 ```
 
 ### Params
-**senbei_template**: the template image file neatly cropped for template matching. \
-**senbei_target**: the target image file for cropping and making data \
-**x_position**: the x coordinate which the program draw lines to
-**width_start**: the initial width about drawing lines
-**width_end**: the end of width about drawing lines
-**step_num**: the step size between widths
-**output_dir**: the output folder name
+**senbei_template**: the template image file path whose image is neatly cropped for template matching. \
+**senbei_target**: the target image file path for cropping and making data \
+**x_position**: the x coordinate which the program draw lines to \
+**width_start**: the initial width about drawing lines \
+**width_end**: the end of width about drawing lines \
+**step_num**: the step size between the widths \
+**output_dir**: the output folder path
 
 <hr>
 
@@ -24,10 +24,10 @@ $ python subtraction.py --template_dir senbei_data/infer_template --base_img_pat
 ```
 
 ### Params
-**template_dir**: the folder which contains the template images such as a nose, and eyes of a senbei \
-**base_img_path**: the base senbei image file \
-**target_img_path**: the target senbei image file \
-**sub_path**: the output file path \
+**template_dir**: a folder path which contains the template images such as a nose, and eyes of a senbei \
+**base_img_path**: the base senbei image file path \
+**target_img_path**: the target senbei image file path \
+**sub_path**: the output file path 
 
 ## Inference
 
@@ -51,7 +51,7 @@ $ python main.py --input_dir output_dir --base_img_path senbei_data/template.bmp
 
 ### Parmas
 
-**input_dir**: the input directory path which contains the inspection target images file. 
+**input_dir**: the input directory path which contains the inspection target images file. \
 The target images corresponds to the files created by data script \
 **base_img_path**: the base image file path \
 **template_dir**: the directory path of template files \
